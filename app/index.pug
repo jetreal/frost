@@ -1,0 +1,444 @@
+doctype html
+html(lang='en')
+  head
+    title frost
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='libs/OwlCarousel/dist/assets/owl.carousel.min.css')
+    link(rel='stylesheet' href='libs/OwlCarousel/dist/assets/owl.theme.default.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet' href='_grid.min.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='js/index.js', defer='')
+    script(src="https://kit.fontawesome.com/f90f7a5525.js")
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+    script(src='libs/Magnific/jquery.magnific-popup.min.js')
+    script(src='libs/OwlCarousel/dist/owl.carousel.min.js')
+
+  body
+    .navBar__toggle
+      p
+        | menu
+    .display
+      #width
+      #height
+      #scroll
+    // header section
+    .wrapperAll
+    
+      include _pug_partials/header
+
+      section.first-page-form-section
+        .first-page-form-section__left-img
+          img(src="/images/fridge.png")
+        .first-page-form-section-wrapper-right
+          .first-page-form-section-wrapper-right__header
+            h2
+              | Побрерём за вас комплектацию и напишем
+              br
+              | грамотное и честное техническое задание
+          .first-page-form-section-wrapper-right-form
+            h3
+              | Вызовите замерщика бесплатно!
+            .first-page-form-section-wrapper-right__form
+              .first-page-form-section-wrapper-right-form__inputs
+                input(type="text" placeholder="Имя *")
+              .first-page-form-section-wrapper-right-form__inputs
+                input(type="text" placeholder="Телефон *")
+              .first-page-form-section-wrapper-right-form__inputs#submitBtn
+                input(type="submit" value="Вызвать замерщика")
+      section.break-head
+        div.break-head-wrapper
+          div
+            h2
+              | Ломаете голову над тонкостями микроклимата
+              br
+              | в холодильной камере?
+          div
+            p
+              | Не знаете как правильно подобрать
+              br
+              | холодильное оборудование?
+          div
+            p
+              | Где взять правильноье техническое
+              br
+              | задание на проектирование?
+        .break-head__arrow
+          img(src="/images/breakHeadArrow.png", alt="")
+      section.factors-of-creation
+        h2.factors-of-creation__h2
+          | Факторы создания правильной среды микроклимата
+        .factors-of-creation-middle-icon-section.container
+          .row.justify-content-center
+            .factors-of-creation-middle-icon-section-item.m-1
+              .factors-of-creation-middle-icon-section__icon#factors-of-creation__icon1
+              .factors-of-creation-middle-icon-section__text
+                p
+                  | Опытные мастера выполняют
+                  br
+                  | работу быстрее, а значит -
+                  br
+                  | дешевле
+          
+            .factors-of-creation-middle-icon-section-item.m-1
+              .factors-of-creation-middle-icon-section__icon#factors-of-creation__icon2
+              .factors-of-creation-middle-icon-section__text
+                p
+                  | Правильный подбор
+                  br
+                  | холодильной установки по
+                  br
+                  | соотношению цена - качество
+        
+            .factors-of-creation-middle-icon-section-item.m-1
+              .factors-of-creation-middle-icon-section__icon#factors-of-creation__icon3
+              .factors-of-creation-middle-icon-section__text
+                p
+                  | Большой поток обеспечивает
+                  br
+                  | лучшие цены у поставщиков
+                  br
+                  | комплектующих
+          
+            .factors-of-creation-middle-icon-section-item.m-1
+              .factors-of-creation-middle-icon-section__icon#factors-of-creation__icon4
+              .factors-of-creation-middle-icon-section__text
+                p
+                  | Используем материалы
+                  br
+                  | и агрегаты, которые доказали
+                  br
+                  | надежность на практике
+        p.factors-of-creation__bottomText
+          | Всегда можно обратиться в нашу компанию за советом
+          br
+          | и консультацией - мы дружим со своими клиентами!
+      section.error-and-resolve
+        h2.error-and-resolve__h2
+          | Очень надеемся что наш опыт поможет вам сэкономить время и средства
+        .error-and-resolve-wrap.container
+          .row
+            .error-and-resolve-wrap__error.col-xl-6
+              p
+                | ОШИБКА
+              p
+                | Надежность, инновационность исполнения каждой заявки
+                br
+                | наших клиентов. На рынке производства и обслуживания холовильного
+                br
+                | оборудования мы работаем уже более 15 лет, годом основания.
+            .error-and-resolve-wrap__resolve.col-xl-6
+              p
+                | РЕШЕНИЕ
+              p
+                | Надёжность, инновационность и скорость ксполнения каждой заявки
+                br
+                | наших клиентов. На рынке производства и обслуживания хдолдильного
+                br
+                | оборудования мы работаем уже более 15 лет, годом основания.
+      section.better-was-consultation
+        .better-was-consultation-header
+          h2
+            | Лучше проконсультироваться у специалистов - чем потратить
+            br
+            | кучу времени на изучение и подбор, не так ли?
+          p
+            | Но выбор всегда за вами - мы лишь предоставляем возможности
+        .better-was-consultation-image-and-form.container
+          .row
+            .better-was-consultation-image-and-form__img.col-xl-7
+              img(src="/images/maniFridge.jpg", alt="")
+            .better-was-consultation-image-and-form__form.col-xl-5
+              h6
+                | Закажите консультацию!
+              input(type="text" placeholder="телефон *")#better-was-consultation__input
+              .better-was-consultation-image-and-form__form-icons
+                p
+                  | Выберите ваш мeсседжер
+                div.better-was-consultation-image-and-form__icons
+                  img(src="/images/viber.png", alt="")
+                  img(src="/images/whatsapp.png", alt="")
+                  img(src="/images/telegram.png", alt="")
+              input(type='submit' value="Заказать консультацию профи")#better-was-consultation__submit
+      section.how-we-noticed
+        .how-we-noticed-header
+          h2
+            | Как мы заметили ошибки совершаются на старте бизнеса,
+            br
+            | вы готовы их сделать чтобы прочувствовать всё на себе?
+          p
+            | Основные ошибки в начале бизнеса с холодильными системами
+        .how-we-noticed-card.container
+          .row.justify-content-center
+            .how-we-noticed-card-item
+              .how-we-noticed-card-item__icon
+              .how-we-noticed-card-item__text
+                p
+                  | Используем материалы и агрегаты,
+                  br
+                  | которые доказали Надёжность
+                  br
+                  | на практике
+            .how-we-noticed-card-item
+              .how-we-noticed-card-item__icon
+              .how-we-noticed-card-item__text
+                p
+                  | Используем материалы и агрегаты,
+                  br
+                  | которые доказали Надёжность
+                  br
+                  | на практике
+            .how-we-noticed-card-item
+              .how-we-noticed-card-item__icon
+              .how-we-noticed-card-item__text
+                p
+                  | Используем материалы и агрегаты,
+                  br
+                  | которые доказали Надёжность
+                  br
+                  | на практике
+      section.howWeWork
+        h2.howWeWork__header
+          | Как мы работаем и дружим с заказчиками
+        div.howWeWork__wrapper-video
+          video(controls)
+            source(src="/video/1.mp4")
+      section.clients-rewiews
+        .clients-rewiews__header
+          h2
+            | Отзывы наших клиентов
+        #review-slider.owl-carousel.owl-theme
+          .clients-rewiews__owl-carousel-item
+            img(src="/images/readySection1.jpg").clients-rewiews__owl-carousel-item-img
+            div.clients-rewiews__icon-and-text
+              img(src="/images/reviewIcon1.jpg", alt="")
+              div
+                h6
+                  | Сергей
+                p
+                  | Надёжность, инновационность и скорость исполнения каждой заявки наших клиентов. На рынке производства и обслуживания холодильного оборудования мы работаем уже более 15 лет, годом основания.
+            
+          .clients-rewiews__owl-carousel-item
+            img(src="/images/readySection2.jpg").clients-rewiews__owl-carousel-item-img
+            div.clients-rewiews__icon-and-text
+              img(src="/images/reviewIcon1.jpg", alt="")
+              div
+                h6
+                  | Алексей
+                p
+                  | Надёжность, инновационность и скорость исполнения каждой заявки наших клиентов. На рынке производства и обслуживания холодильного оборудования мы работаем уже более 15 лет, годом основания.
+        
+
+          .clients-rewiews__owl-carousel-item
+            img(src="/images/readySection3.jpg").clients-rewiews__owl-carousel-item-img
+            div.clients-rewiews__icon-and-text
+              img(src="/images/reviewIcon1.jpg", alt="")
+              div
+                h6
+                  | Сергей
+                p
+                  | Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ea id nostrum assumenda ut nisi nesciunt beatae sapiente quidem. Ut nulla sed blanditiis qui rerum, quidem sint aliquam autem expedita!
+
+          .clients-rewiews__owl-carousel-item
+            img(src="/images/readySection4.jpg").clients-rewiews__owl-carousel-item-img
+            div.clients-rewiews__icon-and-text
+              img(src="/images/reviewIcon1.jpg", alt="")
+              div
+                h6
+                  | Алексей
+                p
+                  | Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ea id nostrum assumenda ut nisi nesciunt beatae sapiente quidem. Ut nulla sed blanditiis qui rerum, quidem sint aliquam autem expedita!
+
+          .clients-rewiews__owl-carousel-item
+            img(src="/images/readySection3.jpg").clients-rewiews__owl-carousel-item-img
+            div.clients-rewiews__icon-and-text
+              img(src="/images/reviewIcon1.jpg", alt="")
+              div
+                h6
+                  | Сергей
+                p
+                  | Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ea id nostrum assumenda ut nisi nesciunt beatae sapiente quidem. Ut nulla sed blanditiis qui rerum, quidem sint aliquam autem expedita!
+
+          .clients-rewiews__owl-carousel-item
+            img(src="/images/readySection3.jpg").clients-rewiews__owl-carousel-item-img
+            div.clients-rewiews__icon-and-text
+              img(src="/images/reviewIcon1.jpg", alt="")
+              div
+                h6
+                  | Алексей
+                p
+                  | Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ea id nostrum assumenda ut nisi nesciunt beatae sapiente quidem. Ut nulla sed blanditiis qui rerum, quidem sint aliquam autem expedita!
+
+          .clients-rewiews__owl-carousel-item
+            img(src="/images/readySection3.jpg").clients-rewiews__owl-carousel-item-img
+            div.clients-rewiews__icon-and-text
+              img(src="/images/reviewIcon1.jpg", alt="")
+              div
+                h6
+                  | Сергей
+                p
+                  | Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ea id nostrum assumenda ut nisi nesciunt beatae sapiente quidem. Ut nulla sed blanditiis qui rerum, quidem sint aliquam autem expedita!
+      section.foto-gallery
+        h3.foto-gallery-header
+          | Фотогаллерея
+        #gallery-slider.foto-gallery-items.owl-carousel.owl-theme
+          .foto-gallery-item
+            img(src="/images/reviewIcon1.jpg", alt="")
+          .foto-gallery-item
+            img(src="/images/reviewIcon1.jpg", alt="")
+          .foto-gallery-item
+            img(src="/images/reviewIcon1.jpg", alt="")
+          .foto-gallery-item
+            img(src="/images/reviewIcon1.jpg", alt="")
+          .foto-gallery-item
+            img(src="/images/reviewIcon1.jpg", alt="")
+      section.readyRefrigeration
+        .readyRefrigeration__header
+          h2
+            | Готовое холодильное оборудование для разных сфер бизнеса
+        .readyRefrigeration-items-section.container
+          .row.justify-content-center
+            .readyRefrigeration-items.col-lg-.m-2
+              .readyRefrigeration-items__img#readyRefrigeration-items__img1
+              .readyRefrigeration-items__text
+                p
+                  | Холодильные
+                  br
+                  | камеры
+            .readyRefrigeration-items.col-lg-.m-2
+              .readyRefrigeration-items__img#readyRefrigeration-items__img2
+              .readyRefrigeration-items__text
+                p
+                  | Холодильные
+                  br
+                  | агрегаты
+            .readyRefrigeration-items.col-lg-.m-2
+              .readyRefrigeration-items__img#readyRefrigeration-items__img3
+              .readyRefrigeration-items__text
+                p
+                  | Холодильные
+                  br
+                  | шкафы
+            .readyRefrigeration-items.col-lg-.m-2
+              .readyRefrigeration-items__img#readyRefrigeration-items__img4
+              .readyRefrigeration-items__text
+                p
+                  | Холодильные
+                  br
+                  | столы
+          .row.justify-content-center
+            .readyRefrigeration-items.col-lg-.m-2
+              .readyRefrigeration-items__img#readyRefrigeration-items__img5
+              .readyRefrigeration-items__text
+                p
+                  | Лари
+            .readyRefrigeration-items.col-lg-.m-2
+              .readyRefrigeration-items__img#readyRefrigeration-items__img6
+              .readyRefrigeration-items__text
+                p
+                  | Холодильные
+                  br
+                  | горки
+            .readyRefrigeration-items.col-lg-.m-2
+              .readyRefrigeration-items__img#readyRefrigeration-items__img7
+              .readyRefrigeration-items__text
+                p
+                  | Витрины
+            .readyRefrigeration-items.col-lg-.m-2
+              .readyRefrigeration-items__img#readyRefrigeration-items__img8
+              .readyRefrigeration-items__text
+                p
+                  | Бонеты
+                  br
+                  | длы продуктов
+      section.make-under-key
+        .make-under-key__header
+          h2
+            | Сделаем всё под ключ - вы не потратите кучу времени
+            br
+            | на подбор и комплектацию объекта
+          p
+            | Комплектуем камеры всем необходимым оборудованием
+        .make-under-key-items
+          .make-under-key-item
+            .make-under-key-item__img#make-under-key-item1
+            .make-under-key-item__text
+              p
+                | Вешало
+                br
+                | для мяса
+          .make-under-key-item
+            .make-under-key-item__img#make-under-key-item2
+            .make-under-key-item__text
+              p
+                | Стеллажи
+                br
+                | для цветов
+          .make-under-key-item
+            .make-under-key-item__img#make-under-key-item3
+            .make-under-key-item__text
+              p
+                | Стеллажи
+                br
+                | металлические
+          .make-under-key-item
+            .make-under-key-item__img#make-under-key-item4
+            .make-under-key-item__text
+              p
+                | Ширма для
+                br
+                | холодильной камеры
+          .make-under-key-item
+            .make-under-key-item__img#make-under-key-item5
+            .make-under-key-item__text
+              p
+                | Зеркала для
+                br
+                | холодильной камеры
+      section.certified
+        h2
+          | Материалы и оборудование сертифицированно
+        .certified-items#certified-slider.owl-carousel.owl-theme
+          .certified-item
+            img(src="/images/sertificate.png", alt="")
+          .certified-item
+            img(src="/images/sertificate.png", alt="")
+          .certified-item
+            img(src="/images/sertificate.png", alt="")
+          .certified-item
+            img(src="/images/sertificate.png", alt="")
+          .certified-item
+            img(src="/images/sertificate.png", alt="")
+          .certified-item
+            img(src="/images/sertificate.png", alt="")
+      section.map
+        script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afd69c68583f375df25774e1b802f34d2487c58b7e782a1dcd3df0181a18194c3&amp;width=100%25&amp;height=320&amp;lang=ru_RU&amp;scroll=true")
+      footer.footer
+        .footer-left
+          h5
+            | контакты
+          p
+            | Работаем с 10 : 00 до 20 : 00 по Москве
+            br
+            | Aдрес офиса: г. Москва улица Покровка 26/1
+        .footer-center
+          h5
+            | мы в социальный сетях
+          div.footer-center-icons
+            div.footer-center-icon
+              i(class="fab fa-vk")
+            div.footer-center-icon
+              i(class="fab fa-twitter")
+            div.footer-center-icon
+              i(class="fab fa-facebook-f")
+        .footer-right
+          a(href="#")
+            h5
+              | о нас
+          a(href="#")
+            p
+              | О компании
+          a(href="#")
+            p
+              | Контакты

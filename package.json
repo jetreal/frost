@@ -1,0 +1,31 @@
+{
+  "name": "frost",
+  "version": "1.0.0",
+  "description": "holod project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "serj",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.0.2",
+    "pug": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jetreal/frost.git"
+  },
+  "keywords": [
+    "viking"
+  ],
+  "bugs": {
+    "url": "https://github.com/jetreal/frost/issues"
+  },
+  "homepage": "https://github.com/jetreal/frost#readme"
+}
