@@ -1,4 +1,6 @@
 // var scrolled;
+
+// временная панель параметров дисплея
 window.onscroll = function() {
   scrolled = window.pageYOffset || document.documentElement.scrollTop;
   document.getElementById('scroll').innerHTML = scrolled + 'px';
@@ -11,8 +13,8 @@ $(window).on('load resize', function(){
 });
 
 
-
-
+// подключение сдайдера карусели
+////////////////////////////////////////////
 $('#review-slider').owlCarousel({
   loop:true,
   margin:10,
@@ -63,6 +65,9 @@ $('#gallery-slider').owlCarousel({
         }
     }
   })
+///////////////////////////////////////////////////
+
+//перемещение инпута заголовка
 
 $(document).ready(function() {
     $(window).on('load resize', function() {
@@ -76,23 +81,28 @@ $(document).ready(function() {
 })
 
 
+// скрытие навбара при нажании на кнопку меню
 $(document).ready(function() {
     $('.navBar__toggle').on('click', function() {
         $('.navBar').toggle('height')
     })
 })
 
+// скрытие навбара при клике на его ссылки если на маленьких экранах
 $(document).ready(function() {
     $('.navBar ul li').on('click', function() {
         if ($('.navBar ul').css('grid-template-columns').length < 28) {
             $('.navBar__toggle').triggerHandler('click')
         }
         $('.navBar ul li').removeClass('navBar__active-li')
-        $(this).addClass('navBar__active-li')
-
 
     })
 })
+
+// $(document).ready(function() {
+//     $('.navBar__active-li').closest('a').attr('href', '#')
+// })
+
 
 $(document).ready(function() {
     $(window).on('resize', function() {

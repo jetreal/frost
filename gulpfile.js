@@ -8,6 +8,10 @@ var gulp                 = require('gulp'), // Подключаем Gulp
 	const { series } = require('gulp');  // новый синтаксис
 	const { parallel } = require('gulp'); // новый синтаксис галп 4 
 
+
+
+
+
 gulp.task('sass', function () { // Создаем таск Sass
 	return gulp.src('app/sass/**/*.sass') // Берем источник
 		.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
