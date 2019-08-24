@@ -75,15 +75,7 @@ block content
         p В согласованную с вами дату приезжает монтажная бригада. Сборка камеры и монтаж оборудования как правило занимают один рабочий день.
     .about-page-map
       script.contactsPage-map(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afd69c68583f375df25774e1b802f34d2487c58b7e782a1dcd3df0181a18194c3&amp;max-width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true")
-    .about-page-form-wrapper
-      .about-page-form
-        .about-page-form-header
-          h4 Оставьте заявку и наш менеджер свяжется с вами и поможет с выбором
-        form.about-page-form-form(action="" method="post")
-          input(type="text" placeholder="Имя" required)
-          input(type="text" placeholder="Телефон" required)
-          input(type="submit" value="заказать звонок")
-
+    include ../_pug_partials/about_page/about_page_form
 
 block scripts
   script(src='../js/aboutPage.js', defer='')

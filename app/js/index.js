@@ -12,6 +12,18 @@ $(window).on('load resize', function(){
     $('#height').html(height + 'px');
 });
 
+$(document).ready(function() {
+    $(window).on('load', function() {
+      $('.navbar__a').attr('href','/_pug_pages/contacts.html')
+      $('.navbar__a2').attr('href','/_pug_pages/about.html')
+      $('.navbar__a3').attr('href','/_pug_pages/guarantees.html')
+      // $('.navBar ul li').triggerHandler('click')
+    })
+  })
+
+
+
+
 
 // подключение сдайдера карусели
 ////////////////////////////////////////////
