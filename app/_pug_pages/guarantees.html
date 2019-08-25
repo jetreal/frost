@@ -74,18 +74,46 @@
         <div class="guarantees-three-images"><img src="/images/guaranteesPage/1.jpg" alt=""><img class="guarantees-three-images-n2" src="/images/guaranteesPage/2.jpg" alt=""><img class="guarantees-three-images-n3" src="/images/guaranteesPage/3.jpg" alt=""></div>
       </div>
       <section class="guarantees-make-a-request-form">
-        <h4>Ваше оборудование требует срочного ремонта? Необходимо техническое обслуживание? <span>Оформите online заявку!</span></h4>
+        <h4>Ваше оборудование требует срочного ремонта? Необходимо техническое обслуживание? <a><span>Оформите online заявку!</span></a></h4>
+        <h3>Заявка на гарантийное/техническое обслуживание</h3>
+        <form class="guarantees-make-a-request-form__form" action="#">
+          <div class="guarantees-form-wrapper-inputs">
+            <input type="text" placeholder="ФИО">
+            <input type="text" placeholder="Телефон">
+            <input type="text" placeholder="Адрес объекта">
+            <input type="text" placeholder="Марка и модель холод. оборуд.">
+            <input type="text" placeholder="Описание неисправности">
+            <input type="text" placeholder="Номер договора подряда">
+          </div>
+          <div class="guarantees-form-wrapper-chechbox">
+            <div>
+              <input class="guarantees-radio" type="radio" id="guaranteesType1" name="guaranteesType" value="По гарантии" checked>
+              <label for="guaranteesType1">По гарантии</label>
+            </div>
+            <div>
+              <input class="guarantees-radio" type="radio" id="guaranteesType2" name="guaranteesType" value="Договор технического обслуживания">
+              <label for="guaranteesType2">Договор технического обслуживания</label>
+            </div>
+            <div>
+              <input class="guarantees-radio" type="radio" id="guaranteesType3" name="guaranteesType" value="Однократно">
+              <label for="guaranteesType3">Однократно</label>
+            </div>
+          </div>
+          <input class="guarantees-form-submit" type="submit" value="Заказать звонок">
+        </form>
       </section>
       <div class="about-page-form-wrapper">
-        <div class="about-page-form">
-          <div class="about-page-form-header">
-            <h4>Оставьте заявку и наш менеджер свяжется с вами и поможет с выбором</h4>
+        <div class="about-page-form-wrapper">
+          <div class="about-page-form">
+            <div class="about-page-form-header">
+              <h4>Оставьте заявку и наш менеджер свяжется с вами и поможет с выбором</h4>
+            </div>
+            <form class="about-page-form-form" action="" method="post">
+              <input type="text" placeholder="Имя" required>
+              <input type="text" placeholder="Телефон" required>
+              <input type="submit" value="заказать звонок">
+            </form>
           </div>
-          <form class="about-page-form-form" action="" method="post">
-            <input type="text" placeholder="Имя" required>
-            <input type="text" placeholder="Телефон" required>
-            <input type="submit" value="заказать звонок">
-          </form>
         </div>
       </div>
       <footer class="footer">

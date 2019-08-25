@@ -168,9 +168,6 @@
 
 .about-page-map {
   padding: 40px 0;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
   margin: 70px auto;
   max-width: 1170px;
   min-height: 400px; }
@@ -191,10 +188,7 @@
 .about-page-form {
   width: 1170px;
   min-height: 260px;
-  background-color: white;
-  -webkit-transition: width .5s;
-  -o-transition: width .5s;
-  transition: width .5s; }
+  background-color: white; }
 
 .about-page-form-header {
   max-width: 700px;
@@ -270,17 +264,17 @@
     margin: 30px auto 50px auto;
     max-width: 970px; }
   .about-page-form {
-    width: 970px; } }
+    width: 960px; } }
 
 @media (max-width: 992px) {
   .about-page-map {
-    max-width: 770px; }
+    max-width: 740px; }
   .about-page-bread-crumbs {
     max-width: 740px; }
   .about-page-contacts-and-map {
     max-width: 740px; }
   .about-page-form {
-    width: 740px; } }
+    width: 730px; } }
 
 @media (max-width: 768px) {
   .about-page-bread-crumbs {

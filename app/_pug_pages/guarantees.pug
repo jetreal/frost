@@ -30,9 +30,29 @@ block content
       img.guarantees-three-images-n3(src="/images/guaranteesPage/3.jpg", alt="")
   section.guarantees-make-a-request-form
     h4 Ваше оборудование требует срочного ремонта? Необходимо техническое обслуживание? 
-      span Оформите online заявку!
-
-  include ../_pug_partials/about_page/about_page_form
+      a: span Оформите online заявку!
+    h3 Заявка на гарантийное/техническое обслуживание
+    form.guarantees-make-a-request-form__form(action="#")
+      div.guarantees-form-wrapper-inputs
+        input(type="text" placeholder="ФИО")
+        input(type="text" placeholder="Телефон")
+        input(type="text" placeholder="Адрес объекта")
+        input(type="text" placeholder="Марка и модель холод. оборуд.")
+        input(type="text" placeholder="Описание неисправности")
+        input(type="text" placeholder="Номер договора подряда")
+      div.guarantees-form-wrapper-chechbox
+        div
+          input.guarantees-radio(type='radio' id=('guaranteesType1') name="guaranteesType" value="По гарантии" checked)
+          label(for='guaranteesType1') По гарантии
+        div
+          input.guarantees-radio(type='radio' id=('guaranteesType2') name="guaranteesType" value="Договор технического обслуживания")
+          label(for='guaranteesType2') Договор технического обслуживания
+        div
+          input.guarantees-radio(type='radio' id=('guaranteesType3') name="guaranteesType" value="Однократно")
+          label(for='guaranteesType3') Однократно
+      input.guarantees-form-submit(type="submit" value="Заказать звонок")
+  .about-page-form-wrapper
+    include ../_pug_partials/about_page/about_page_form
 
 block scripts
   script(src='../js/guaranteesPage.js', defer='')

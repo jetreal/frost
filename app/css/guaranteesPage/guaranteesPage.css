@@ -128,7 +128,6 @@
     padding: 0 0 0 25px; } }
 
 .guarantees-three-images {
-  outline: 1px solid red;
   padding: initial;
   width: 100%;
   margin: 65px 0 0;
@@ -162,25 +161,152 @@
     height: auto; } }
 
 .guarantees-make-a-request-form {
+  position: relative;
   max-width: 1170px;
-  min-height: 480px;
-  outline: 1px solid green;
+  min-height: 510px;
   margin: 60px auto 0;
   padding: 0 10px; }
   .guarantees-make-a-request-form h4 {
     font-family: 'Roboto_italic';
-    color: #7E8285; }
+    color: #7E8285;
+    text-align: center; }
     .guarantees-make-a-request-form h4 span {
       color: #F56458;
       cursor: pointer; }
+  .guarantees-make-a-request-form h3 {
+    font-family: 'Roboto_regular';
+    color: #4A5259;
+    text-align: center;
+    padding: 80px 0 30px; }
+
+.guarantees-form-wrapper-inputs {
+  display: grid;
+  grid-template-areas: 'i1 i2 i3' 'i4 i5 i6';
+  width: 1070px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 20px; }
+  .guarantees-form-wrapper-inputs input {
+    width: 330px;
+    height: 40px;
+    text-indent: 20px;
+    font-family: 'Roboto_regular'; }
+  .guarantees-form-wrapper-inputs input:nth-child(1) {
+    grid-area: i1; }
+  .guarantees-form-wrapper-inputs input:nth-child(2) {
+    grid-area: i2; }
+  .guarantees-form-wrapper-inputs input:nth-child(3) {
+    grid-area: i3; }
+  .guarantees-form-wrapper-inputs input:nth-child(4) {
+    grid-area: i4; }
+  .guarantees-form-wrapper-inputs input:nth-child(5) {
+    grid-area: i5; }
+  .guarantees-form-wrapper-inputs input:nth-child(6) {
+    grid-area: i6; }
+
+@media (max-width: 1170px) {
+  .guarantees-form-wrapper-inputs {
+    grid-template-areas: 'i1 i2' 'i3 i4' 'i5 i6';
+    width: 740px; } }
+
+@media (max-width: 768px) {
+  .guarantees-form-wrapper-inputs {
+    grid-template-areas: 'i1' 'i2' 'i3' 'i4' 'i5' 'i6';
+    width: 470px; } }
+
+@media (max-width: 500px) {
+  .guarantees-form-wrapper-inputs {
+    width: 320px; }
+    .guarantees-form-wrapper-inputs input {
+      width: 300px; }
+  .guarantees-make-a-request-form {
+    padding: 0px; } }
+
+.guarantees-form-wrapper-chechbox {
+  width: 660px;
+  margin: 30px auto 0;
+  min-height: 20px;
+  font-family: "Roboto_regular";
+  color: #7A7C7D;
+  display: grid;
+  grid-template-columns: auto auto auto; }
+  .guarantees-form-wrapper-chechbox div {
+    text-align: center; }
+  .guarantees-form-wrapper-chechbox input {
+    position: relative; }
+  .guarantees-form-wrapper-chechbox label {
+    position: relative; }
+
+.guarantees-radio {
+  z-index: -1;
+  opacity: 0; }
+
+.guarantees-radio + label::before {
+  content: '';
+  position: absolute;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid grey;
+  border-radius: 100%;
+  opacity: .5; }
+
+.guarantees-radio + label::after {
+  content: '';
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid red;
+  border-radius: 100%;
+  opacity: 0; }
+
+.guarantees-radio:checked + label::after {
+  opacity: 1;
+  background-color: red;
+  padding: 5px; }
+
+@media (max-width: 700px) {
+  .guarantees-form-wrapper-chechbox {
+    width: 320px;
+    grid-template-columns: auto;
+    grid-gap: 12px;
+    padding: 0 10px; }
+    .guarantees-form-wrapper-chechbox div {
+      text-align: left; } }
+
+.guarantees-form-submit {
+  font-family: "Roboto_bold";
+  width: 230px;
+  height: 50px;
+  background-color: #F56458;
+  margin: 40px auto 0;
+  color: white;
+  display: block;
+  border-radius: 4px; }
 
 .about-page-form {
   width: 1170px;
   min-height: 260px;
   background-color: white;
-  -webkit-transition: width .5s;
-  -o-transition: width .5s;
-  transition: width .5s; }
+  margin: 0 auto; }
+
+.about-page-form-wrapper {
+  max-width: 100%;
+  min-height: 400px;
+  background-color: #EBF1F5;
+  display: grid;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .about-page-form-header {
   max-width: 700px;
@@ -279,7 +405,7 @@
 
 @media (max-width: 576px) {
   .about-page {
-    padding: 6px; }
+    padding: 0px; }
   .about-page-bread-crumbs {
     max-width: 320px; }
   .about-page-form {
