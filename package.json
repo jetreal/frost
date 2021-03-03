@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "gulp-sass": "^4.0.2",
-    "pug": "^2.0.4"
+    "pug": "^3.0.1"
   },
   "repository": {
     "type": "git",
